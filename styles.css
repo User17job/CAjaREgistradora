@@ -4,14 +4,11 @@ body{
     margin: 0px;
     padding: 0px;
     width: 100%;
-    height: 100vh;
-    background-color: rgb(1, 31, 47);
+     height: 100vh;
+    background-image: linear-gradient(295deg,  rgba(7, 38, 54, 0.868) 40%, aliceblue 100%);
+    background-repeat: no-repeat;
     color: azure;
-    display: grid;
-    grid-template-columns: auto;
-    align-items: center;
-     font-family: "Black Ops One"; 
-    align-items: center;
+    font-family: "Black Ops One"; 
     overflow-x: hidden;
 }
 
@@ -20,7 +17,7 @@ body{
 }
 .priceContainer{
     position: absolute;
-    left: 82%;
+    left: 83.5%;
     top: -20px;
     border: solid #f5f5f5;
     width: 100px;
@@ -36,56 +33,50 @@ main{
     max-width: 100%;
     height: auto;
     margin: auto;
-    border:solid;
+    border:solid ;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0);
+    box-shadow: 0px 0px 20px rgba(0, 64, 64, 0.573);
     text-align: center;
     padding: 5px;
+    position: relative;
+    z-index: 2;
+
 }
-.main{
+form{
+    position: absolute;
     width: 100%;
-    height: 100vh;
-    display: flex;
-    align-self: center;
+    height: 99vh;
+    top: 0px;
     z-index: 1;
 }
+
 .contenedor1{
     position: absolute;
     top: 20px;
     width: 200px;
-    /* border: solid red; */
     text-align: end;
 }
 .contenedor2{
     width:200px;
-    /* border: solid red; */
     position: absolute;
     top: 20px;
     left: 80%;
     text-align: end;
 }
-.productsContainer{
-    position: absolute;
-}
-form{
-    position: absolute;
-    width: 99%;
-    height: 99vh;
-}
 
 input[type="checkbox"]:checked {
     background: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
-  }
-  input[type="checkbox"] {
+}
+input[type="checkbox"] {
     cursor: pointer;
     -moz-appearance:none;
     appearance: initial;
-    background-image: linear-gradient(145deg,  rgb(1, 31, 47) 20%, aliceblue 100%);
+    background-image: linear-gradient(145deg,  rgba(8, 40, 58, 0.6) 20%, rgba(205, 221, 235, 0.459) 100%);
     height: 75px;
     width: 75px;
     border-radius: 50%;
-    border: 2px solid rgb(59, 54, 54);
-  }
+    border: 2px solid rgb(1, 31, 47);
+}
 .user-input{
     width: 500px;
     max-width: 90%;
@@ -128,6 +119,9 @@ button{
 
 
 @media screen and (max-width:850px) {
+    body{
+        height: auto;
+    }
     form{
         position: relative;
         width: 100%;
@@ -153,47 +147,22 @@ button{
         margin-bottom: 20px;
     } 
     .priceContainer{
-        width: 73px;
+        width: 15%;
+    }
+    form{
+        display: flex;
+        justify-content: center;
     }
     .contenedor1{
-        left: -30%;
-        text-align: end;
+        width: 200px;
+        left: -0%;
+        text-align: start;
+        position: relative;
     }
     .contenedor2{
-        left: 45%;
-        text-align: end;
-    }
-    .elementos1{
+        width: 200px;
+        left: 0%;
+        text-align: start;
         position: relative;
-        top: 5%;
-        left: 60%;
-        z-index: 3;
-    }
-    .elementos2{
-        position: relative;
-        top: 5%;
-        left:80%;
-        z-index: 3;
-
-    }
-    .elementos3{
-        position: relative;
-        top: 5%;
-        left: 60%;
-        z-index: 3;
-
-    }
-    .elementos4{
-        position: relative;
-        top: 5%;
-        left: 80%;
-        z-index: 3;
-
-    }
-    .elementos5{
-        position: relative;
-        top: 5%;
-        left: 60%;
-        z-index: 3;
     }
 }

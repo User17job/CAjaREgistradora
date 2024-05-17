@@ -7,6 +7,23 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+  <main>
+      <h1>Cash Register</h1>
+    <div class="input-div"> <!---->  
+      <label for="cash">Enter cash from customer:</label>
+      <input type="number" id="cash" class="user-input" value="" placeholder="00.00"/> <!---->
+      <button class="check-btn-styles" id="purchase-btn">Purchase</button><!---->
+      <div class="priceContainer"></div>
+    </div>
+    <div class="withdrawContainer">
+      <div id="change-due"></div><!---->
+      <div class="" id="cash-drawer-display">
+        <h3>Cash InDrawer🤑🐱‍🏍</h3><br>
+      </div>
+    </div>
+  </main>  
+  
+
   <form id="miFormulario"> 
     <div class="contenedor1">
       <div class="elementos1">
@@ -45,26 +62,7 @@
           <input type="checkbox"  name="elemento" onclick="calcularTotal()" value="20.1"> item10 = 20.1
         </div>
       </div>
-    </form> 
-  
-  
-
-      <main>
-          <h1>Cash Register</h1>
-        <div class="input-div"> <!---->  
-          <label for="cash">Enter cash from customer:</label>
-          <input type="number" id="cash" class="user-input" value="" placeholder="00.00"/> <!---->
-          <button class="check-btn-styles" id="purchase-btn">Purchase</button><!---->
-          <div class="priceContainer"></div>
-        </div>
-        <div class="withdrawContainer">
-          <div id="change-due"></div><!---->
-          <div class="" id="cash-drawer-display">
-            <h3>Cash InDrawer🤑🐱‍🏍</h3><br>
-          </div>
-        </div>
-      </main>
-
+  </form> 
     <script src="script.js"></script>
   </body>
 </html>

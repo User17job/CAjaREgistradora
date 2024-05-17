@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+  <form id="miFormulario"> 
+    <div class="contenedor1">
+      <div class="elementos1">
+        <input type="checkbox" name="elemento" onclick="calcularTotal()" value="1"> Water
+      </div>
+
+      <div class="elementos2">
+        <input type="checkbox" name="elemento" onclick="calcularTotal()" value="3"> Juice
+      </div>
+
+      <div class="elementos3">
+        <input type="checkbox" name="elemento" onclick="calcularTotal()" value="5"> Burger 
+      </div>
+      <div class="elementos4">
+        <input type="checkbox" name="elemento" onclick="calcularTotal()" value="3"> Pizza
+      </div>
+      <div class="elementos5">
+        <input type="checkbox" name="elemento" onclick="calcularTotal()" value="30"> Tablet vortex
+      </div>
+    </div>
+    
+      <div class="contenedor2">
+        <div class="elementos6">
+          <input type="checkbox"  name="elemento" onclick="calcularTotal()" value="40"> Saled
+        </div>
+        <div class="elementos7">
+          <input type="checkbox" name="elemento" onclick="calcularTotal()" value="50"> iphone7
+        </div>
+        <div class="elementos8">
+          <input type="checkbox"name="elemento" onclick="calcularTotal()" value="60"> Carro a control
+        </div>
+        <div class="elementos9">
+          <input type="checkbox"  name="elemento" onclick="calcularTotal()" value="25"> Drone
+        </div>
+        <div class="elementos10">
+          <input type="checkbox"  name="elemento" onclick="calcularTotal()" value="25"> Thinkpad yoga
+        </div>
+      </div>
+    </form> 
+  
+
+      <main>
+          <h1>Cash Register</h1>
+        <div class="input-div"> <!---->  
+          <label for="cash">Enter cash from customer:</label>
+          <input type="number" id="cash" class="user-input" value="" placeholder="00.00"/> <!---->
+          <button class="check-btn-styles" id="purchase-btn">Purchase</button><!---->
+          <div class="priceContainer"></div>
+        </div>
+        <div class="withdrawContainer">
+          <div id="change-due"></div><!---->
+          <div class="" id="cash-drawer-display">
+            <h3>Cash InDrawer🤑🐱‍🏍</h3><br>
+          </div>
+        </div>
+      </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -11,12 +11,13 @@ const currencyNameMap = {
   'ONE HUNDRED': 'Hundreds'
 };
 
-
+main
 */
 // en este proyecto se usa la moneda en su cantidad como centimos, por eso uno 1 sera igual a 100 y 5 a 500 mientras que 100 a 1000
 //  pero todo eso pasa por el lado del desarrollador el costumer no ve nada de esto 
 let Ganancias = 0;
 console.log(Ganancias,"En ganancias");
+
 
 const displayChangeDue = document.getElementById('change-due');
 const cashInput = document.getElementById('cash');
@@ -65,6 +66,7 @@ const DENOMINATIONS = [
     ['TWENTY', 2000],
     ['ONE HUNDRED', 10000]
 ];
+
 let cid = [
     ['PENNY', 1.01],
     ['NICKEL', 2.05],
@@ -76,6 +78,8 @@ let cid = [
     ['TWENTY', 60],
     ['ONE HUNDRED', 100]
 ];
+
+
 let totalSuma = 0;
 for (const subarreglo of cid) {
     totalSuma += subarreglo[1];
@@ -162,7 +166,8 @@ if( totalInDraw < Cash){
       // CUARTO FILTRO
      let res = checkCashRegister(price, Cash, cid);
      sumarMonto();
-
+     Ganancias=price + Ganancias;
+     console.log(Ganancias,"En ganancias");
     //  console.log(res);
    //  console.log(res.change);
     displayChangeDue.innerHTML +=`
@@ -190,8 +195,7 @@ if( totalInDraw < Cash){
  let resta = totalInDraw-totalToGive + 25;// los"25"son de comision por venta
  totalInDraw=resta.toFixed(2) ;
 
- Ganancias=price + Ganancias;
- console.log(Ganancias,"En ganancias");
+
  //  cashDrawerDisplay.innerHTML+=`<div class="paragraph"><p>MONEY IN DRAWER: $${totalInDraw}</p></div>`
    }    
    else{
@@ -258,7 +262,3 @@ function sumarMonto(){
   console.log(cid)
 }
 PriceC.textContent=price;
-
-
-
-
